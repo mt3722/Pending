@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,67 +57,19 @@
             color: #3498db;
             text-decoration: underline;
         }
-        .align-right {
-            text-align: right;
-        }
-        .address-cell {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
     </style>
 </head>
 <body>
     <h1>預選物件</h1>
     <table>
-        <tr>
-            <th>區域</th>
-            <th>建案</th>
-            <th>總價</th>
-            <th>坪數</th>
-            <th>樓層</th>
-            <th>屋齡</th>
-            <th>地址</th>
-            <th>地圖</th>
-            <th>查看</th>
-            <th>更多</th>
-        </tr>
-        <tr><td>西區</td><td>---</td><td>2199</td><td>186.72</td><td>1/7</td><td>29</td><td>台中市西區英士路71號</td>
-            <td><a href="https://maps.app.goo.gl/Dw5njtCiM1s5nAd16" class="btn" target="_blank">地圖</a></td>
-            <td><a href="https://business.591.com.tw/sale/16050155" class="btn" target="_blank">查看</a></td>
-            <td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td>
-        </tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 江小姐: 0913003237</p><div style="display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 50%;"><p><strong>每坪:</strong> 11.78</p><p><strong>管理費:</strong> 7096</p></div><div style="flex: 1; min-width: 50%;"><p><strong>交通:</strong> 國光客運中山代售處站 358公尺</p></div></div></td></tr><tr><td>南區</td><td>大安紫金城</td><td>3400</td><td>985.86</td><td>B1/20</td><td>26</td><td>台中市南區建國南路一段265號</td>
-            <td><a href="https://maps.app.goo.gl/cAwyvz6w3ntTBQZu5" class="btn" target="_blank">地圖</a></td>
-            <td><a href="https://business.591.com.tw/sale/15211929" class="btn" target="_blank">查看</a></td>
-            <td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td>
-        </tr><tr class="hidden-info"><td colspan="10"><p>(屋主) 林小姐: 0986222051 | (屋主) 顏小姐: 0911312279</p><div style="display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 50%;"><p><strong>每坪:</strong> 3.45</p><p><strong>管理費:</strong> 29600</p></div><div style="flex: 1; min-width: 50%;"><p><strong>交通:</strong> 台中捷運大慶站 418公尺</p></div></div></td></tr><tr><td>西屯區</td><td>財訊金融</td><td>3550</td><td>236.69
-190.9</td><td>B1/10</td><td>34.3</td><td>台中市西屯區青海路一段65號</td>
-            <td><a href="https://maps.app.goo.gl/bAhxHg691anKHiMg7" class="btn" target="_blank">地圖</a></td>
-            <td><a href="https://www.rakuya.com.tw/sell_item/info?ehid=006385227003655&from=list_regular" class="btn" target="_blank">查看</a></td>
-            <td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td>
-        </tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 陳鈺璇: 23692762</p><div style="display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 50%;"><p><strong>管理費:</strong> 10220</p><p><strong>交通:</strong> 文心櫻花站</p></div></div></td></tr><tr><td>西區</td><td>中港通商</td><td>4000</td><td>208</td><td>10/25</td><td>32</td><td>台中市西區臺灣大道二段186號</td>
-            <td><a href="https://maps.app.goo.gl/mGGkEbtZLh8wQkHN8" class="btn" target="_blank">地圖</a></td>
-            <td><a href="https://business.591.com.tw/sale/16114679" class="btn" target="_blank">查看</a></td>
-            <td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td>
-        </tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 陳小姐: 0906998958</p><div style="display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 50%;"><p><strong>每坪:</strong> 19.23</p><p><strong>交通:</strong> 國光客運中山代售處站 334公尺</p></div></div></td></tr><tr><td>南區</td><td>興大學府城</td><td>5280</td><td>269.31
-186.15</td><td>2/18</td><td>28</td><td>台中市南區建成路1629號</td>
-            <td><a href="https://maps.app.goo.gl/RLR195epoCHAm2ub6" class="btn" target="_blank">地圖</a></td>
-            <td><a href="https://business.591.com.tw/sale/16060352" class="btn" target="_blank">查看</a></td>
-            <td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td>
-        </tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 劉煥彥: 0916850752</p><div style="display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 50%;"><p><strong>每坪:</strong> 19.61</p><p><strong>交通:</strong> 中興大學站 682公尺</p></div></div></td></tr><tr><td>南區</td><td>同隆經緯天下</td><td>5500</td><td>299.93
-173.47</td><td>12/12</td><td>23</td><td>台中市南區美村路二段186號</td>
-            <td><a href="https://maps.app.goo.gl/H4fncrNtYgBFuXcf9" class="btn" target="_blank">地圖</a></td>
-            <td><a href="https://business.591.com.tw/sale/15968472" class="btn" target="_blank">查看</a></td>
-            <td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td>
-        </tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 廖先生: 0933852111</p><div style="display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 50%;"><p><strong>每坪:</strong> 18.34</p><p><strong>電梯:</strong> 2+1</p></div><div style="flex: 1; min-width: 50%;"><p><strong>交通:</strong> 五權車站 562公尺</p></div></div></td></tr><tr><td>北區</td><td>俊國椰林道</td><td>6500</td><td>300.86</td><td>B1/14</td><td>28.7</td><td>台中市北區山西路一段51號</td>
-            <td><a href="https://maps.app.goo.gl/SMj78LSmE6Ur7g677" class="btn" target="_blank">地圖</a></td>
-            <td><a href="https://www.rakuya.com.tw/sell_item/info?ehid=0d2b9727217884d" class="btn" target="_blank">查看</a></td>
-            <td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td>
-        </tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 林惠菁: 0953320670</p><div style="display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 50%;"><p><strong>每坪:</strong> 21.6</p><p><strong>交通:</strong> 捷運文心中清站出口</p></div></div></td></tr><tr><td>西區</td><td>啓復澄洲大公益</td><td>6800</td><td>274.54/486.3</td><td>B1/14</td><td>25.5</td><td>台中市西區公益路221號</td>
-            <td><a href="https://maps.app.goo.gl/eRYu9yoVuqchzT4W9" class="btn" target="_blank">地圖</a></td>
-            <td><a href="https://www.rakuya.com.tw/sell_item/info?ehid=07224e249136389" class="btn" target="_blank">查看</a></td>
-            <td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td>
-        </tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 陳韋政: 0978623306</p><div style="display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 50%;"><p><strong>每坪:</strong> 13.98</p></div></div></td></tr>
+        <thead>
+            <tr>
+                <th>區域</th><th>建案</th><th>總價</th><th>坪數</th><th>樓層</th><th>屋齡</th><th>地址</th><th>地圖</th><th>查看</th><th>更多</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>西區</td><td>---</td><td>2199</td><td>186.72</td><td>1/7</td><td>29</td><td>台中市西區英士路71號</td><td><a href="https://maps.app.goo.gl/Dw5njtCiM1s5nAd16" class="btn" target="_blank">地圖</a></td><td><a href="https://business.591.com.tw/sale/16050155" class="btn" target="_blank">查看</a></td><td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td></tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 江小姐 0913003237<br></p><table><tr><td colspan='2'>管理費: 7096</td><td colspan='2'>建物登記: 186.72</td><td colspan='2'>每坪: 11.78</td><td colspan='2'>交通: 國光客運中山代售處站 358公尺</td></tr></tr></table></td></tr><tr><td>南區</td><td>大安紫金城</td><td>3400</td><td>985.86</td><td>B1/20</td><td>26</td><td>台中市南區建國南路一段265號</td><td><a href="https://maps.app.goo.gl/cAwyvz6w3ntTBQZu5" class="btn" target="_blank">地圖</a></td><td><a href="https://business.591.com.tw/sale/15211929" class="btn" target="_blank">查看</a></td><td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td></tr><tr class="hidden-info"><td colspan="10"><p>(屋主) 林小姐 0986222051<br>(屋主) 顏小姐 0911312279<br></p><table><tr><td colspan='2'>管理費: 29600</td><td colspan='2'>建物登記: 985.86</td><td colspan='2'>每坪: 3.45</td><td colspan='2'>交通: 台中捷運大慶站 418公尺</td></tr></tr></table></td></tr><tr><td>西屯區</td><td>財訊金融</td><td>3550</td><td>236.69</td><td>B1/10</td><td>34.3</td><td>台中市西屯區青海路一段65號</td><td><a href="https://maps.app.goo.gl/bAhxHg691anKHiMg7" class="btn" target="_blank">地圖</a></td><td><a href="https://www.rakuya.com.tw/sell_item/info?ehid=006385227003655&from=list_regular" class="btn" target="_blank">查看</a></td><td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td></tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 陳鈺璇 0423692762<br></p><table><tr><td colspan='2'>管理費: 10220</td><td colspan='2'>建物登記: 236.69</td><td colspan='2'>主建物: 190.9</td><td colspan='2'>公共設施: 45.8</td></tr><tr><td colspan='2'>交通: 文心櫻花站</td></tr></table></td></tr><tr><td>西區</td><td>中港通商</td><td>4000</td><td>208</td><td>10/25</td><td>32</td><td>台中市西區臺灣大道二段186號</td><td><a href="https://maps.app.goo.gl/mGGkEbtZLh8wQkHN8" class="btn" target="_blank">地圖</a></td><td><a href="https://business.591.com.tw/sale/16114679" class="btn" target="_blank">查看</a></td><td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td></tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 陳小姐 0906998958<br></p><table><tr><td colspan='2'>每坪: 19.23</td><td colspan='2'>電梯: 1</td><td colspan='2'>交通: 國光客運中山代售處站 334公尺</td></tr></table></td></tr><tr><td>北區</td><td>慶禾財經大樓</td><td>4288</td><td>278.38</td><td>8/20</td><td>32</td><td>台中市北區中清路一段100號</td><td><a href="https://maps.app.goo.gl/tJU95x6PtcUzfJY67" class="btn" target="_blank">地圖</a></td><td><a href="https://www.rakuya.com.tw/sell_item/info?ehid=08caad23130165a" class="btn" target="_blank">查看</a></td><td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td></tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 蔡佩頤 0933194905<br></p><table><tr><td colspan='2'>管理費: 15966</td><td colspan='2'>建物登記: 278.38</td><td colspan='2'>主建物: 209.17</td><td colspan='2'>公共設施: 44.64</td></tr><tr><td colspan='2'>附屬建物: 24.57</td><td colspan='2'>每坪: 15.4</td><td colspan='2'>車位: 機械式</td></tr></table></td></tr><tr><td>南區</td><td>興大學府城</td><td>5280</td><td>269.31</td><td>2/18</td><td>28</td><td>台中市南區建成路1629號</td><td><a href="https://maps.app.goo.gl/RLR195epoCHAm2ub6" class="btn" target="_blank">地圖</a></td><td><a href="https://business.591.com.tw/sale/16060352" class="btn" target="_blank">查看</a></td><td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td></tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 劉煥彥 0916850752<br></p><table><tr><td colspan='2'>建物登記: 269.31</td><td colspan='2'>主建物: 186.15</td><td colspan='2'>公共設施: 29%</td><td colspan='2'>每坪: 19.61</td></tr><tr><td colspan='2'>交通: 中興大學站 682公尺</td></tr></table></td></tr><tr><td>南區</td><td>同隆經緯天下</td><td>5500</td><td>299.93</td><td>12/12</td><td>23</td><td>台中市南區美村路二段186號</td><td><a href="https://maps.app.goo.gl/H4fncrNtYgBFuXcf9" class="btn" target="_blank">地圖</a></td><td><a href="https://business.591.com.tw/sale/15968472" class="btn" target="_blank">查看</a></td><td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td></tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 廖先生 0933852111<br></p><table><tr><td colspan='2'>建物登記: 299.93</td><td colspan='2'>主建物: 173.47</td><td colspan='2'>公共設施: 26%</td><td colspan='2'>每坪: 18.34</td></tr><tr><td colspan='2'>電梯: 2+1</td><td colspan='2'>交通: 五權車站 562公尺</td></tr></table></td></tr><tr><td>北區</td><td>俊國椰林道</td><td>6500</td><td>300.86</td><td>B1/14</td><td>28.7</td><td>台中市北區山西路一段51號</td><td><a href="https://maps.app.goo.gl/SMj78LSmE6Ur7g677" class="btn" target="_blank">地圖</a></td><td><a href="https://www.rakuya.com.tw/sell_item/info?ehid=0d2b9727217884d" class="btn" target="_blank">查看</a></td><td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td></tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 林惠菁 0953320670<br></p><table><tr><td colspan='2'>公共設施: 76.4</td><td colspan='2'>每坪: 21.6</td><td colspan='2'>交通: 捷運文心中清站出口</td></tr></table></td></tr><tr><td>西區</td><td>啓復澄洲大公益</td><td>6800</td><td>486.3</td><td>B1/14</td><td>25.5</td><td>台中市西區公益路221號</td><td><a href="https://maps.app.goo.gl/eRYu9yoVuqchzT4W9" class="btn" target="_blank">地圖</a></td><td><a href="https://www.rakuya.com.tw/sell_item/info?ehid=07224e249136389" class="btn" target="_blank">查看</a></td><td><span class="toggle-info" onclick="toggleInfo(this)">顯示更多</span></td></tr><tr class="hidden-info"><td colspan="10"><p>(仲介) 陳韋政 0978623306<br></p><table><tr><td colspan='2'>建物登記: 486.3</td><td colspan='2'>主建物: 274.54</td><td colspan='2'>每坪: 13.98</td></tr></table></td></tr>
+        </tbody>
     </table>
     <script>
         function toggleInfo(element) {
